@@ -7,6 +7,21 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'playfair': ['Playfair Display', 'serif'],
+      'montserrat': ['Montserrat', 'sans-serif'],
+      'roboto': ['Roboto Mono', 'monospace']
+    },
+    colors: {
+      'black': '#000',
+      'grey': '#333',
+      'slate-gray': '#666',
+      'white': '#fff',
+      'beige': '#f5f5f5',
+      'navy': '#000080',
+      'mustard': '#daa520',
+      'teal': '#008080'
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
