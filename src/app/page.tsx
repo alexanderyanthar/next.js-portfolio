@@ -46,7 +46,9 @@ export default function Home() {
             coding my favorite aspect of the job.
           </p>
           <p>
+            {/* eslint-disable react/no-unescaped-entities */}
             Beyond the realms of coding, I am a true experimenter at heart. I'm
+            {/* eslint-disable react/no-unescaped-entities */}
             always on the lookout for new ideas and ventures to explore. From
             concocting my own soy sauce and crafting delightful miso to
             nurturing a lush and vibrant garden, my love for experimentation
@@ -55,7 +57,9 @@ export default function Home() {
             perseverance and dedication.
           </p>
           <p>
+            {/* eslint-disable react/no-unescaped-entities */}
             Throughout my coding and web development journey, I've acquired a
+            {/* eslint-disable react/no-unescaped-entities */}
             wealth of knowledge and honed my skills to create impactful and
             user-friendly digital experiences. I am constantly seeking
             inspiration from both the coding community and the natural world, I
@@ -66,7 +70,9 @@ export default function Home() {
             Ultimately, I see coding as an ever-evolving canvas that allows me
             to blend my passion for problem-solving with my innate love for
             exploration and experimentation. Thank you for taking the time to
+            {/* eslint-disable react/no-unescaped-entities */}
             get to know me a little better. Let's connect!
+            {/* eslint-disable react/no-unescaped-entities */}
           </p>
         </section>
         <section>

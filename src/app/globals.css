@@ -31,7 +31,7 @@ body {
 }
 
 .background-image {
-  background-image: url('/alex-yanthar-profile-image.jpg');
+  background-image: url("/alex-yanthar-profile-image.jpg");
   background-position: 50% 25%;
   background-repeat: no-repeat;
   background-size: cover;
