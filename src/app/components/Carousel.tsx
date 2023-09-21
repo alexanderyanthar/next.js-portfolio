@@ -1,19 +1,29 @@
 "use client";
 
+import { StaticImageData } from "next/image";
 import { Carousel } from "react-bootstrap";
 
 interface CarouselProps {
-  descriptions: string[];
+  items: Array<{ description: string; imageUrl: string }>;
 }
 
-const CarouselComponent: React.FC<CarouselProps> = ({ descriptions }) => {
+const CarouselComponent: React.FC<CarouselProps> = ({ items }) => {
   return (
-    <Carousel className="h-screen flex justify-center items-center">
-      {descriptions.map((description, index) => (
-        <Carousel.Item className="" key={index}>
-          <p className="text-beige w-1/2 mx-auto my-0 h-40 flex justify-center items-center">
-            {description}
-          </p>
+    <Carousel className="flex justify-center items-center" interval={20000}>
+      {items.map((item, index) => (
+        <Carousel.Item className="relative" key={index}>
+          <div className="flex flex-col justify-center rounded items-center h-screen">
+            <div className="flex justify-center">
+              <img
+                className="opacity-30"
+                src={item.imageUrl}
+                alt={`Slide ${index}`}
+              />
+            </div>
+            <p className="text-beige text-xl w-2/3 mx-auto my-0 flex items-center absolute">
+              {item.description}
+            </p>
+          </div>
         </Carousel.Item>
       ))}
     </Carousel>
