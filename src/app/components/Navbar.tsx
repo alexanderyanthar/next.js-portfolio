@@ -1,13 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <nav className="font-roboto h-full text-2xl">
       <ul className="my-4 flex flex-col h-full justify-center items-center">
         <li className="my-4">
           <Link
-            className="text-beige no-underline hover:text-teal transition-colors duration-300"
+            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
+              pathname === "/" ? "text-mustard animate-pulse" : ""
+            }`}
             href="/"
           >
             Home
@@ -15,7 +22,9 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className="text-beige no-underline hover:text-teal transition-colors duration-300"
+            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
+              pathname === "/about-me" ? "text-mustard animate-pulse" : ""
+            }`}
             href="/about-me"
           >
             About me
@@ -23,7 +32,9 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className="text-beige no-underline hover:text-teal transition-colors duration-300"
+            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
+              pathname === "/skills" ? "text-mustard animate-pulse" : ""
+            }`}
             href="/skills"
           >
             My skills
@@ -31,7 +42,9 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className="text-beige no-underline hover:text-teal transition-colors duration-300"
+            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
+              pathname === "/my-work" ? "text-teal" : ""
+            }`}
             href="/my-work"
           >
             My work
@@ -39,7 +52,9 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className="text-beige no-underline hover:text-teal transition-colors duration-300"
+            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
+              pathname === "/contact" ? "text-teal" : ""
+            }`}
             href="/contact"
           >
             Contact Me
@@ -47,7 +62,9 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className="text-beige no-underline hover:text-teal transition-colors duration-300"
+            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
+              pathname === "/devlogs" ? "text-teal" : ""
+            }`}
             href="/devlogs"
           >
             Devlogs
@@ -55,7 +72,9 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className="text-beige no-underline hover:text-teal transition-colors duration-300"
+            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
+              pathname === "/blog" ? "text-teal" : ""
+            }`}
             href="/blog"
           >
             Blog

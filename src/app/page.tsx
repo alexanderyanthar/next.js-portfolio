@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <>
-      <header className="h-screen flex bg-black relative">
+      <header className="h-screen flex bg-dark-gray relative">
         <div className="background-image h-screen w-screen absolute opacity-30">
           <p className="sr-only">Background image of Alexander Yanthar</p>
         </div>
