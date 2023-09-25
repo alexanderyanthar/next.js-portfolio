@@ -12,8 +12,8 @@ const Navbar = () => {
       <ul className="my-4 flex flex-col h-full justify-center items-center">
         <li className="my-4">
           <Link
-            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
-              pathname === "/" ? "text-mustard animate-pulse" : ""
+            className={`text-beige no-underline hover:text-mustard transition-colors duration-300 ${
+              pathname === "/" ? "text-mustard font-bold animate-pulse" : ""
             }`}
             href="/"
           >
@@ -22,8 +22,10 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
-              pathname === "/about-me" ? "text-mustard animate-pulse" : ""
+            className={`text-beige no-underline hover:text-mustard transition-colors duration-300 ${
+              pathname === "/about-me"
+                ? "text-mustard font-bold animate-pulse"
+                : ""
             }`}
             href="/about-me"
           >
@@ -32,8 +34,10 @@ const Navbar = () => {
         </li>
         <li className="my-4">
           <Link
-            className={`text-beige no-underline hover:text-teal transition-colors duration-300 ${
-              pathname === "/skills" ? "text-mustard animate-pulse" : ""
+            className={`text-beige no-underline hover:text-mustard transition-colors duration-300 ${
+              pathname === "/skills"
+                ? "text-mustard font-bold animate-pulse"
+                : ""
             }`}
             href="/skills"
           >

@@ -1,21 +1,35 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import CarouselComponent from "../components/Carousel";
+import htmlIcon from "../../../public/html5-original-wordmark.svg";
 import CSSIcon from "../../../public/css3-original-wordmark.svg";
 import SassIcon from "../../../public/sass-original.svg";
 import TailwindIcon from "../../../public/tailwindcss-original-wordmark.svg";
 import NextjsIcon from "../../../public/nextjs-line.svg";
 import reactIcon from "../../../public/react-original-wordmark.svg";
 import bootstrapIcon from "../../../public/bootstrap-original-wordmark.svg";
+import djangoIcon from "../../../public/django-plain-wordmark.svg";
+import expressIcon from "../../../public/express-original.svg";
+import nodeIcon from "../../../public/nodejs-original-wordmark.svg";
+import mongodbIcon from "../../../public/mongodb-original-wordmark.svg";
+import mySQLIcon from "../../../public/mysql-original-wordmark.svg";
+import javascriptIcon from "../../../public/javascript-original.svg";
+import pythonIcon from "../../../public/python-original-wordmark.svg";
+import typescriptIcon from "../../../public/typescript-original.svg";
+import accessibilityIcon from "../../../public/accessibility_new_FILL0_wght400_GRAD0_opsz24.svg";
+import gitIcon from "../../../public/git-original-wordmark.svg";
+import gitHubIcon from "../../../public/github-original-wordmark.svg";
+import herokuIcon from "../../../public/heroku-original-wordmark.svg";
+import jestIcon from "../../../public/jest-plain.svg";
 
 const page = () => {
   const items = [
     {
       images: [
-        {
-          description: "CSS",
-          imageUrl: CSSIcon.src,
-        },
+        // {
+        //   description: "CSS",
+        //   imageUrl: CSSIcon.src,
+        // },
         {
           description: "sass",
           imageUrl: SassIcon.src,
@@ -38,6 +52,81 @@ const page = () => {
         },
       ],
       slideDescription: "Front-end Stack",
+    },
+    {
+      images: [
+        {
+          description: "Django",
+          imageUrl: djangoIcon.src,
+        },
+        {
+          description: "Express",
+          imageUrl: expressIcon.src,
+        },
+        {
+          description: "MongoDB",
+          imageUrl: mongodbIcon.src,
+        },
+        {
+          description: "MySQL",
+          imageUrl: mySQLIcon.src,
+        },
+        {
+          description: "Node",
+          imageUrl: nodeIcon.src,
+        },
+      ],
+      slideDescription: "Back-end Stack",
+    },
+    {
+      images: [
+        {
+          description: "JavaScript",
+          imageUrl: javascriptIcon.src,
+        },
+        {
+          description: "Python",
+          imageUrl: pythonIcon.src,
+        },
+        {
+          description: "TypeScript",
+          imageUrl: typescriptIcon.src,
+        },
+        {
+          description: "HTML",
+          imageUrl: htmlIcon.src,
+        },
+        {
+          description: "CSS",
+          imageUrl: CSSIcon.src,
+        },
+      ],
+      slideDescription: "Langauges",
+    },
+    {
+      images: [
+        {
+          description: "Accessibility",
+          imageUrl: accessibilityIcon.src,
+        },
+        {
+          description: "Git",
+          imageUrl: gitIcon.src,
+        },
+        {
+          description: "GitHub",
+          imageUrl: gitHubIcon.src,
+        },
+        {
+          description: "Heroku",
+          imageUrl: herokuIcon.src,
+        },
+        {
+          description: "Jest",
+          imageUrl: jestIcon.src,
+        },
+      ],
+      slideDescription: "Other",
     },
   ];
 
