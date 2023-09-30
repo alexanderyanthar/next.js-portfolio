@@ -125,6 +125,11 @@ const page = () => {
           description: "Jest",
           imageUrl: jestIcon.src,
         },
+        {
+          description: "video",
+          imageUrl:
+            "https://www.loom.com/share/95b9092dfb7e4fe5b2dc7b6468096ad7",
+        },
       ],
       slideDescription: "Other",
     },
